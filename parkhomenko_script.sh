@@ -25,7 +25,7 @@ echo "Аналіз файлу: $LOG_FILE"
 echo "----------------------------------------"
 
 # 1. Підрахунок рядків зі словами "Failed" або "Error" (case-insensitive)
-ERROR_COUNT=$(grep -iE "Failed|Error" "$LOG_FILE" | wc -l)
+ERROR_COUNT=$(grep -iE "Failed|Error" "$LOG_FILE")
 
 echo "Кількість помилок (Failed/Error): $ERROR_COUNT"
 echo "----------------------------------------"
